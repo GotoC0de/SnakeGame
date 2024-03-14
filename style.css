@@ -1,0 +1,71 @@
+* {
+    font-family: 'Share Tech Mono', monospace;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(35, 35, 35);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 99vw;
+    height: 45vw;
+}
+
+#game {
+    padding-top: 10%;
+    width: 25%;
+    height: 25%;
+}
+
+#board, .board_info {
+    max-width: 90%;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#start, .board_info {
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+#game_over {
+    display: none;
+    font-size: 80px;
+    color: whitesmoke;
+}
+
+.board_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start {
+    background-color: rgb(252, 101, 101);
+    border: none;
+    color: whitesmoke
+}
+
+#score_board {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.empty_square {
+    background-color: cornflowerblue;
+}
+
+.snake_square {
+    background-color: greenyellow;
+}
+
+.food_square {
+    background-color: red;
+}
